@@ -1,10 +1,10 @@
 //import font from google
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-
 // variables
-$gray-base :#000;
-$font-regular: 'Roboto',sans-serif;
-
+$font-regular: 'Roboto', sans-serif;
+$green : #2db564;
+$blue : #16263c;
+$lightGrey : #4f5152;
 // mixins
 @mixin translate($x, $y) 
 {
@@ -29,15 +29,36 @@ body
 	font-family: $font-regular;
 }
 
+nav 
+{
+	position: absolute !important;
+	width: 80%;
+	height: 18vh;
+	left: 10%;
+	.navbar-brand 
+	{
+		color: #fff;
+		font-size: 2.3rem;
+		letter-spacing: 1px;
+	}
+	.nav-link 
+	{
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 1px;
+		padding: 8px 32px !important;
+	}
+}
+
 .fullscreen-bg 
 {
 	position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
 	height: 100vh;
 	&::before 
 	{
@@ -47,7 +68,7 @@ body
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: rgba($gray-base, .5);
+		background: rgba(22, 38, 60, 0.89);
 		z-index: 1;
 	}
 }
@@ -61,9 +82,8 @@ body
 	height: 100%;
 }
 
-.home-content 
+.homeSection 
 {
-	width: 100%;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -72,15 +92,95 @@ body
 	@include translate(-50%, -50%);
 	h1 
 	{
-		font-size: 48px;
-		color: white;
+		font-family: $font-regular;
+		font-weight: 100;
+		font-size: 40px;
+		color: #fff;
 		padding: 0 10px;
-		small 
+		overflow: hidden;
+		margin: 0 auto;
+		letter-spacing: 2px;
+		
+		pink
 		{
-			font: 300 18px $font-regular;
-			color: white;
+			color: $green;
+			font-weight: 600;
+		}
+	}
+	.homebuttonContainer
+	{
+		margin-top: 70px;
+		a
+		{
+			border-radius: 5px;
+			border: 1px solid $green;
+			text-align: center;
+			text-decoration: none;
+			color: $green;
+			font-size: 20px;
+			letter-spacing: 1px;
+			padding: 10px 20px;	
+		}
+		a:hover
+		{
+			color: $blue;
+			background: $green;
+		}
+	}
+
+}
+
+.aboutSection
+{
+	width: 80%;
+    padding: 32px 0;
+    margin: 0 auto;
+	
+	.row
+	{
+		margin: 0;
+		padding: 0;
+		h1
+		{
+			color : $blue;
+			text-align: left;
+		}
+		.textContainer
+		{
+			margin: 0 auto;
+			p
+			{
+				color: $lightGrey;
+				letter-spacing: 1px;
+				padding: 16px 0;
+				text-align: left;
+			}
+		}
+		.ResumeContainer
+		{
+			text-align: center;
+			a
+			{
+				border-radius: 5px;
+				border: 1px solid $green;
+				text-align: center;
+				text-decoration: none;
+				color: $green;
+				font-size: 20px;
+				letter-spacing: 1px;
+				padding: 10px 20px;	
+			}
+			a:hover
+			{
+				color: $blue;
+				background: $green;
+			}
+		}
+		img
+		{
+			width: 300px;
+			margin: 0 auto;
 			display: block;
-			margin: 10px 0;
 		}
 	}
 }
@@ -107,7 +207,7 @@ body
 {
 	.fullscreen-bg 
 	{
-		background: url('media/For_Wes/For_Wes.jpg') center center / cover no-repeat;
+		background: url('../media/For_Wes/For_Wes.jpg') center center / cover no-repeat;
 		@include background-size(cover);
 	}
 	.fullscreen-bg__video 

@@ -4,6 +4,21 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif; }
 
+nav {
+  position: absolute !important;
+  width: 80%;
+  height: 18vh;
+  left: 10%; }
+  nav .navbar-brand {
+    color: #fff;
+    font-size: 2.3rem;
+    letter-spacing: 1px; }
+  nav .nav-link {
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding: 8px 32px !important; }
+
 .fullscreen-bg {
   position: relative;
   top: 0;
@@ -20,7 +35,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(22, 38, 60, 0.89);
     z-index: 1; }
 
 .fullscreen-bg__video {
@@ -30,8 +45,7 @@ body {
   width: 100%;
   height: 100%; }
 
-.home-content {
-  width: 100%;
+.homeSection {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -41,15 +55,68 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-  .home-content h1 {
-    font-size: 48px;
-    color: white;
-    padding: 0 10px; }
-    .home-content h1 small {
-      font: 300 18px "Roboto", sans-serif;
-      color: white;
-      display: block;
-      margin: 10px 0; }
+  .homeSection h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: #fff;
+    padding: 0 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: 2px; }
+    .homeSection h1 pink {
+      color: #2db564;
+      font-weight: 600; }
+  .homeSection .homebuttonContainer {
+    margin-top: 70px; }
+    .homeSection .homebuttonContainer a {
+      border-radius: 5px;
+      border: 1px solid #2db564;
+      text-align: center;
+      text-decoration: none;
+      color: #2db564;
+      font-size: 20px;
+      letter-spacing: 1px;
+      padding: 10px 20px; }
+    .homeSection .homebuttonContainer a:hover {
+      color: #16263c;
+      background: #2db564; }
+
+.aboutSection {
+  width: 80%;
+  padding: 32px 0;
+  margin: 0 auto; }
+  .aboutSection .row {
+    margin: 0;
+    padding: 0; }
+    .aboutSection .row h1 {
+      color: #16263c;
+      text-align: left; }
+    .aboutSection .row .textContainer {
+      margin: 0 auto; }
+      .aboutSection .row .textContainer p {
+        color: #4f5152;
+        letter-spacing: 1px;
+        padding: 16px 0;
+        text-align: left; }
+    .aboutSection .row .ResumeContainer {
+      text-align: center; }
+      .aboutSection .row .ResumeContainer a {
+        border-radius: 5px;
+        border: 1px solid #2db564;
+        text-align: center;
+        text-decoration: none;
+        color: #2db564;
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 10px 20px; }
+      .aboutSection .row .ResumeContainer a:hover {
+        color: #16263c;
+        background: #2db564; }
+    .aboutSection .row img {
+      width: 300px;
+      margin: 0 auto;
+      display: block; }
 
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
@@ -61,7 +128,7 @@ body {
     left: -100%; } }
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url("media/For_Wes/For_Wes.jpg") center center/cover no-repeat;
+    background: url("../media/For_Wes/For_Wes.jpg") center center/cover no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
