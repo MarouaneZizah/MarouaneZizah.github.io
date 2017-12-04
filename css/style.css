@@ -143,11 +143,11 @@ nav {
     border: 1px solid #eaeaea;
     padding: 12px 0;
     box-shadow: 0px 0px 20px 5px #f7f7f7; }
-    .skillsSection .slider .sliderItemContainer {
+    .skillsSection .slider .mainSlider .sliderItemContainer {
       position: relative;
       background: #f7f7f7;
       outline: none; }
-      .skillsSection .slider .sliderItemContainer::before {
+      .skillsSection .slider .mainSlider .sliderItemContainer::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -155,7 +155,7 @@ nav {
         display: block;
         height: 29px;
         top: 0; }
-      .skillsSection .slider .sliderItemContainer::after {
+      .skillsSection .slider .mainSlider .sliderItemContainer::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -163,13 +163,13 @@ nav {
         display: block;
         height: 29px;
         bottom: 0; }
-      .skillsSection .slider .sliderItemContainer .sliderItemDiv {
+      .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv {
         margin: 0 auto;
         text-align: center;
         width: 100px;
         height: 100px;
         position: relative; }
-        .skillsSection .slider .sliderItemContainer .sliderItemDiv > div:first-child {
+        .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv > div:first-child {
           position: absolute;
           top: 0px;
           right: 7px;
@@ -179,7 +179,7 @@ nav {
           background: #f7f7f7;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px; }
-        .skillsSection .slider .sliderItemContainer .sliderItemDiv > div:nth-child(2) {
+        .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv > div:nth-child(2) {
           position: absolute;
           top: 0px;
           left: 7px;
@@ -189,17 +189,17 @@ nav {
           background: #f7f7f7;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px; }
-        .skillsSection .slider .sliderItemContainer .sliderItemDiv > div:nth-child(3) {
+        .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv > div:nth-child(3) {
           background: #f7f7f7;
           position: relative;
           top: 29px;
           width: 100%;
           height: 42px; }
-          .skillsSection .slider .sliderItemContainer .sliderItemDiv > div:nth-child(3) h1 {
+          .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv > div:nth-child(3) h1 {
             color: #16263c;
             line-height: 42px;
             font-size: 20px; }
-        .skillsSection .slider .sliderItemContainer .sliderItemDiv > div:nth-child(4) {
+        .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv > div:nth-child(4) {
           position: absolute;
           bottom: 0px;
           left: 7px;
@@ -210,7 +210,7 @@ nav {
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
           z-index: 1; }
-        .skillsSection .slider .sliderItemContainer .sliderItemDiv > div:nth-child(5) {
+        .skillsSection .slider .mainSlider .sliderItemContainer .sliderItemDiv > div:nth-child(5) {
           position: absolute;
           bottom: 0px;
           right: 7px;
@@ -221,11 +221,11 @@ nav {
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
           z-index: 1; }
-    .skillsSection .slider .slick-center {
+    .skillsSection .slider .mainSlider .slick-current {
       position: relative;
       background: #f7f7f7;
       outline: none; }
-      .skillsSection .slider .slick-center::before {
+      .skillsSection .slider .mainSlider .slick-current::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -233,7 +233,7 @@ nav {
         display: block;
         height: 29px;
         top: 0; }
-      .skillsSection .slider .slick-center::after {
+      .skillsSection .slider .mainSlider .slick-current::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -241,13 +241,13 @@ nav {
         display: block;
         height: 29px;
         bottom: 0; }
-      .skillsSection .slider .slick-center .sliderItemDiv {
+      .skillsSection .slider .mainSlider .slick-current .sliderItemDiv {
         margin: 0 auto;
         text-align: center;
         width: 100px;
         height: 100px;
         position: relative; }
-        .skillsSection .slider .slick-center .sliderItemDiv > div:first-child {
+        .skillsSection .slider .mainSlider .slick-current .sliderItemDiv > div:first-child {
           position: absolute;
           top: 0px;
           right: 7px;
@@ -257,7 +257,7 @@ nav {
           background: #16263c;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px; }
-        .skillsSection .slider .slick-center .sliderItemDiv > div:nth-child(2) {
+        .skillsSection .slider .mainSlider .slick-current .sliderItemDiv > div:nth-child(2) {
           position: absolute;
           top: 0px;
           left: 7px;
@@ -267,17 +267,17 @@ nav {
           background: #16263c;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px; }
-        .skillsSection .slider .slick-center .sliderItemDiv > div:nth-child(3) {
+        .skillsSection .slider .mainSlider .slick-current .sliderItemDiv > div:nth-child(3) {
           background: #f7f7f7;
           position: relative;
           top: 29px;
           width: 100%;
           height: 42px; }
-          .skillsSection .slider .slick-center .sliderItemDiv > div:nth-child(3) h1 {
+          .skillsSection .slider .mainSlider .slick-current .sliderItemDiv > div:nth-child(3) h1 {
             color: #16263c;
             line-height: 42px;
             font-size: 20px; }
-        .skillsSection .slider .slick-center .sliderItemDiv > div:nth-child(4) {
+        .skillsSection .slider .mainSlider .slick-current .sliderItemDiv > div:nth-child(4) {
           position: absolute;
           bottom: 0px;
           left: 7px;
@@ -288,7 +288,7 @@ nav {
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
           z-index: 1; }
-        .skillsSection .slider .slick-center .sliderItemDiv > div:nth-child(5) {
+        .skillsSection .slider .mainSlider .slick-current .sliderItemDiv > div:nth-child(5) {
           position: absolute;
           bottom: 0px;
           right: 7px;
@@ -299,6 +299,20 @@ nav {
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
           z-index: 1; }
+    .skillsSection .slider .sliderDetails .sliderItemContainer {
+      outline: none;
+      margin-top: 20px; }
+      .skillsSection .slider .sliderDetails .sliderItemContainer .skillText {
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px; }
+      .skillsSection .slider .sliderDetails .sliderItemContainer img {
+        width: 60px;
+        height: auto;
+        margin: 20px auto;
+        filter: grayscale(0.5); }
+        .skillsSection .slider .sliderDetails .sliderItemContainer img:hover {
+          filter: grayscale(0); }
 
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {

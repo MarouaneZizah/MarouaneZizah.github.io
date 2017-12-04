@@ -223,200 +223,230 @@ nav
 		border: 1px solid #eaeaea;
 		padding: 12px 0;
 		box-shadow: 0px 0px 20px 5px #f7f7f7;
-		.sliderItemContainer
+
+		.mainSlider
 		{
-			position: relative;
-			background: #f7f7f7;
-			outline: none;
-			&::before 
+			.sliderItemContainer
 			{
-				content: "";
-				position: absolute;
-				width: 100%;
-				background: #fff;
-				display: block;
-				height: 29px;
-				top: 0;
-			}
-			&::after
-			{
-				content: "";
-				position: absolute;
-				width: 100%;
-				background: #fff;
-				display: block;
-				height: 29px;
-				bottom: 0;
-			}
-			.sliderItemDiv
-			{
-				margin: 0 auto;
-				text-align: center;
-				width: 100px;
-				height: 100px;
 				position: relative;
-				>div:first-child
+				background: #f7f7f7;
+				outline: none;
+				&::before 
 				{
+					content: "";
 					position: absolute;
-					top: 0px;
-					right: 7px;
-					transform: skew(29deg);
-					width: 65%;
-					height: 29px;
-					background: #f7f7f7;
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
-				}
-				>div:nth-child(2)
-				{
-					position: absolute;
-					top: 0px;
-					left: 7px;
-					transform: skew(-29deg);
-					width: 65%;
-					height: 29px;
-					background: #f7f7f7;
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
-				}
-				>div:nth-child(3)
-				{
-					background: #f7f7f7;
-					position: relative;
-					top: 29px;
 					width: 100%;
-					height: 42px;
-					h1
+					background: #fff;
+					display: block;
+					height: 29px;
+					top: 0;
+				}
+				&::after
+				{
+					content: "";
+					position: absolute;
+					width: 100%;
+					background: #fff;
+					display: block;
+					height: 29px;
+					bottom: 0;
+				}
+				.sliderItemDiv
+				{
+					margin: 0 auto;
+					text-align: center;
+					width: 100px;
+					height: 100px;
+					position: relative;
+					>div:first-child
 					{
-						color: $blue;
-						line-height: 42px;
-						font-size: 20px;
+						position: absolute;
+						top: 0px;
+						right: 7px;
+						transform: skew(29deg);
+						width: 65%;
+						height: 29px;
+						background: #f7f7f7;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+					>div:nth-child(2)
+					{
+						position: absolute;
+						top: 0px;
+						left: 7px;
+						transform: skew(-29deg);
+						width: 65%;
+						height: 29px;
+						background: #f7f7f7;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+					>div:nth-child(3)
+					{
+						background: #f7f7f7;
+						position: relative;
+						top: 29px;
+						width: 100%;
+						height: 42px;
+						h1
+						{
+							color: $blue;
+							line-height: 42px;
+							font-size: 20px;
+						}
+					}
+					>div:nth-child(4)
+					{
+						position: absolute;
+						bottom: 0px;
+						left: 7px;
+						transform: skew(29deg);
+						width: 65%;
+						height: 29px;
+						background: #f7f7f7;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						z-index: 1;
+					}
+					>div:nth-child(5)
+					{
+						position: absolute;
+						bottom: 0px;
+						right: 7px;
+						transform: skew(-29deg);
+						width: 65%;
+						height: 29px;
+						background: #f7f7f7;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						z-index: 1;
 					}
 				}
-				>div:nth-child(4)
+			}
+		
+			.slick-current
+			{
+				position: relative;
+				background: #f7f7f7;
+				outline: none;
+				&::before 
 				{
+					content: "";
 					position: absolute;
-					bottom: 0px;
-					left: 7px;
-					transform: skew(29deg);
-					width: 65%;
+					width: 100%;
+					background: #fff;
+					display: block;
 					height: 29px;
-					background: #f7f7f7;
-					border-bottom-left-radius: 5px;
-					border-bottom-right-radius: 5px;
-					z-index: 1;
+					top: 0;
 				}
-				>div:nth-child(5)
+				&::after
 				{
+					content: "";
 					position: absolute;
-					bottom: 0px;
-					right: 7px;
-					transform: skew(-29deg);
-					width: 65%;
+					width: 100%;
+					background: #fff;
+					display: block;
 					height: 29px;
-					background: #f7f7f7;
-					border-bottom-left-radius: 5px;
-					border-bottom-right-radius: 5px;
-					z-index: 1;
+					bottom: 0;
+				}
+				.sliderItemDiv
+				{
+					margin: 0 auto;
+					text-align: center;
+					width: 100px;
+					height: 100px;
+					position: relative;
+					>div:first-child
+					{
+						position: absolute;
+						top: 0px;
+						right: 7px;
+						transform: skew(29deg);
+						width: 65%;
+						height: 29px;
+						background: #16263c;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+					>div:nth-child(2)
+					{
+						position: absolute;
+						top: 0px;
+						left: 7px;
+						transform: skew(-29deg);
+						width: 65%;
+						height: 29px;
+						background: #16263c;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+					>div:nth-child(3)
+					{
+						background: #f7f7f7;
+						position: relative;
+						top: 29px;
+						width: 100%;
+						height: 42px;
+						h1
+						{
+							color: $blue;
+							line-height: 42px;
+							font-size: 20px;
+						}
+					}
+					>div:nth-child(4)
+					{
+						position: absolute;
+						bottom: 0px;
+						left: 7px;
+						transform: skew(29deg);
+						width: 65%;
+						height: 29px;
+						background: #16263c;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						z-index: 1;
+					}
+					>div:nth-child(5)
+					{
+						position: absolute;
+						bottom: 0px;
+						right: 7px;
+						transform: skew(-29deg);
+						width: 65%;
+						height: 29px;
+						background: #16263c;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						z-index: 1;
+					}
 				}
 			}
 		}
 
-		.slick-center
+		.sliderDetails
 		{
-			position: relative;
-			background: #f7f7f7;
-			outline: none;
-			&::before 
+			.sliderItemContainer
 			{
-				content: "";
-				position: absolute;
-				width: 100%;
-				background: #fff;
-				display: block;
-				height: 29px;
-				top: 0;
-			}
-			&::after
-			{
-				content: "";
-				position: absolute;
-				width: 100%;
-				background: #fff;
-				display: block;
-				height: 29px;
-				bottom: 0;
-			}
-			.sliderItemDiv
-			{
-				margin: 0 auto;
-				text-align: center;
-				width: 100px;
-				height: 100px;
-				position: relative;
-				>div:first-child
+				outline : none;
+				margin-top: 20px;
+				.skillText
 				{
-					position: absolute;
-					top: 0px;
-					right: 7px;
-					transform: skew(29deg);
-					width: 65%;
-					height: 29px;
-					background: #16263c;
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
+					padding: 20px;
+					text-align: center;
+					margin-top: 30px;
 				}
-				>div:nth-child(2)
+				img
 				{
-					position: absolute;
-					top: 0px;
-					left: 7px;
-					transform: skew(-29deg);
-					width: 65%;
-					height: 29px;
-					background: #16263c;
-					border-top-left-radius: 5px;
-					border-top-right-radius: 5px;
-				}
-				>div:nth-child(3)
-				{
-					background: #f7f7f7;
-					position: relative;
-					top: 29px;
-					width: 100%;
-					height: 42px;
-					h1
+					width: 60px;
+					height: auto;
+					margin: 20px auto;
+					filter: grayscale(.5);
+					&:hover
 					{
-						color: $blue;
-						line-height: 42px;
-						font-size: 20px;
+						filter: grayscale(0);
 					}
-				}
-				>div:nth-child(4)
-				{
-					position: absolute;
-					bottom: 0px;
-					left: 7px;
-					transform: skew(29deg);
-					width: 65%;
-					height: 29px;
-					background: #16263c;
-					border-bottom-left-radius: 5px;
-					border-bottom-right-radius: 5px;
-					z-index: 1;
-				}
-				>div:nth-child(5)
-				{
-					position: absolute;
-					bottom: 0px;
-					right: 7px;
-					transform: skew(-29deg);
-					width: 65%;
-					height: 29px;
-					background: #16263c;
-					border-bottom-left-radius: 5px;
-					border-bottom-right-radius: 5px;
-					z-index: 1;
 				}
 			}
 		}
