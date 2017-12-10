@@ -5,6 +5,7 @@ $font-regular: 'Roboto', sans-serif;
 $green : #2db564;
 $blue : #16263c;
 $lightGrey : #4f5152;
+$darkwhite : #f8faf9;
 // mixins
 @mixin translate($x, $y) 
 {
@@ -22,11 +23,17 @@ $lightGrey : #4f5152;
 	background-size: $size;
 }
 
+*
+{
+	outline: none;
+}
+
 body 
 {
 	margin: 0;
 	padding: 0;
 	font-family: $font-regular;
+	background: $darkwhite;
 }
 
 nav 
@@ -145,63 +152,58 @@ nav
 }
 
 .aboutSection
-{
-	width: 80%;
-    padding: 32px 0;
-    margin: 0 auto;
+{	
+	background: url(../media/img/aboutMe.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 	
-	.row
+	.sectionWrapper
 	{
-		margin: 0;
-		padding: 0;
-		h1
+		width: 80%;
+		padding: 32px 0;
+		margin: 0 auto;
+		.row
 		{
-			color : $blue;
-			text-align: left;
-		}
-		.textContainer
-		{
-			margin: 0 auto;
-			p
+			margin: 0;
+			padding: 0;
+			h1
 			{
-				color: $lightGrey;
-				letter-spacing: 1px;
-				padding: 16px 0;
+				color : $blue;
 				text-align: left;
 			}
-		}
-		.ResumeContainer
-		{
-			text-align: center;
-			a
+			.textContainer
 			{
-				border-radius: 5px;
-				border: 1px solid $green;
-				text-align: center;
-				text-decoration: none;
-				color: $green;
-				font-size: 20px;
-				letter-spacing: 1px;
-				padding: 10px 20px;	
-			}
-			a:hover
-			{
-				color: $blue;
-				background: $green;
-			}
-		}
-		.PersoImgContaner
-		{
-			margin-top: 32px;
-			img
-			{
-				width: 60%;
 				margin: 0 auto;
-				display: block;
-				height: auto;
+				p
+				{
+					color: $lightGrey;
+					letter-spacing: 1px;
+					padding: 16px 0;
+					text-align: left;
+				}
+			}
+			.ResumeContainer
+			{
+				text-align: center;
+				a
+				{
+					border-radius: 5px;
+					border: 1px solid $green;
+					text-align: center;
+					text-decoration: none;
+					color: $green;
+					font-size: 20px;
+					letter-spacing: 1px;
+					padding: 10px 20px;	
+				}
+				a:hover
+				{
+					color: $blue;
+					background: $green;
+				}
 			}
 		}
-
 	}
 }
 
@@ -223,6 +225,7 @@ nav
 		border: 1px solid #eaeaea;
 		padding: 12px 0;
 		box-shadow: 0px 0px 20px 5px #f7f7f7;
+		background: #fff;
 
 		.mainSlider
 		{
@@ -436,23 +439,210 @@ nav
 					padding: 20px;
 					text-align: center;
 					margin-top: 30px;
+					color : $blue;
+
+					hr
+					{
+						width: 90%;
+						margin: 12px auto;
+						border: 0;
+						height: 1px;
+						background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(42, 80, 132), rgba(0, 0, 0, 0));
+					}
+					p
+					{
+						padding-left: 35px;
+						text-align: left;
+					}
 				}
 				img
 				{
 					width: 60px;
 					height: auto;
 					margin: 20px auto;
-					filter: grayscale(.5);
-					&:hover
-					{
-						filter: grayscale(0);
-					}
+					filter: grayscale(.2);
 				}
 			}
 		}
 	}
 }
 
+.workSection
+{
+	width: 80%;
+    padding: 32px 0;
+    margin: 0 auto;
+
+	>h1
+	{
+		color: $blue;
+		text-align: left;
+		margin-bottom: 32px;
+	}
+
+	.WorkDetails
+	{
+		justify-content: center;
+		display: flex;
+		flex-flow: column;
+
+		h1
+		{
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin: 8px 0;
+			color: $blue;
+			font-weight: 300;
+		}
+
+		>p
+		{
+			letter-spacing: 1px;
+			margin: 8px 0;
+			color: #777777;
+			font-weight: 200;
+			line-height: 1.6;
+		}
+
+		.badgeWrapper
+		{
+			margin : 0;
+			span
+			{
+				margin: 8px 0;
+				color: $blue;
+				border-radius: 4px;
+				padding: 6px 10px;
+				border: 1px solid $green;
+			}
+		}
+
+		a
+		{
+			padding: 10px;
+			border: 1px solid $green;
+			color: $blue;
+			width: 170px;
+			margin: 8px 0;
+			text-align: center;
+			border-radius: 4px;
+			font-weight: 600;
+			text-decoration: none !important;
+			&:hover
+			{
+				background: $green;
+			}
+		}
+	}
+
+	.mockUp
+	{
+		img
+		{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.contactSection
+{
+	background: url(../media/img/contact.jpeg);
+    background-size: cover;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    background-repeat: no-repeat;
+	background-position: bottom;
+	position: relative;
+
+	&::before 
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(22, 38, 60, 0.7);
+		z-index: 1;
+	}
+	>div
+	{
+		position: relative;
+		z-index: 1;
+
+		h1
+		{
+			color : #e6e6e6;
+		}
+		form
+		{
+			width: 50%;
+			margin: 0 auto 40px;
+
+			input , textarea
+			{
+				background: transparent;
+				border: none;
+				border-bottom: 2px solid #e6e6e6;
+				padding: 12px;
+				margin-bottom: 12px;
+				width: 100%;
+				color: #e6e6e6;
+				letter-spacing: 1px;
+				font-weight: 300;
+				word-spacing: 1px;
+				resize: none;
+				overflow: hidden;
+			}
+
+			button
+			{
+				padding: 5px 10px;
+				background: transparent;
+				border: 1px solid #e6e6e6;
+				border-radius: 4px;
+				width: 200px;
+				color: #e6e6e6;
+				font-size: 20px;
+				cursor: pointer;
+			}
+		}	
+	}	
+}
+
+.socialMedia
+{
+	background: $green;
+	padding: 20px;
+	text-align: center;
+	color : $blue;
+
+	>div
+	{
+		a
+		{
+			color: #16263c;
+			text-decoration: none !important;
+			outline: none;
+
+			.fasm
+			{
+				margin: 12px 6px;
+				font-size: 22px;
+			}
+		}
+		
+	}
+
+	>.fasm
+	{
+		font-size: 12px;
+		vertical-align: baseline;
+	}
+
+}
 @media (min-aspect-ratio: 16/9) 
 {
 	.fullscreen-bg__video 
@@ -522,6 +712,24 @@ nav
 			background: $green;
 		}
 	}
+	
+	.WorkDetails
+	{
+		order: 2;
+		text-align: center;
+		a
+		{
+			margin: 10px auto !important;
+		}
+	}
+	
+	.contactSection
+	{
+		>div form
+		{
+			width: 60%;
+		}
+	}
 }
 
 @media (max-width: 510px)
@@ -529,5 +737,87 @@ nav
 	.homebuttonContainer a
 	{
 		font-size: inherit !important;
+	}
+
+	.contactSection
+	{
+		&::before
+		{
+			background: rgba(22, 38, 60, 0.80);
+		}
+		>div
+		{
+			h1
+			{
+				font-size: 2rem;
+			}
+
+			form
+			{
+				width: 85%;
+			}
+		}
+	}
+}
+
+@media (max-width: 375px)
+{
+	.contactSection
+	{
+		>div
+		{
+			h1
+			{
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 996px)
+{
+	.homeSection h1
+	{
+		font-size: 36px;	
+	}
+}
+
+@media (max-width: 909px)
+{
+	.homeSection h1
+	{
+		font-size: 33px;	
+	}
+}
+
+@media (max-width: 845px)
+{
+	.homeSection h1
+	{
+		font-size: 30px;	
+	}
+}
+
+@media (max-width: 780px)
+{
+	.homeSection h1
+	{
+		font-size: 25px;	
+	}
+}
+
+@media (max-width: 676px)
+{
+	.homeSection h1
+	{
+		font-size: 36px;	
+	}
+}
+
+@media (max-width: 386px)
+{
+	.workSection .WorkDetails h1
+	{
+		font-size: 2rem;	
 	}
 }

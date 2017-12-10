@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Marouane Zizah</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +15,7 @@
 
 	<nav class="navbar navbar-toggleable-sm">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<i class="fa fa-bars navbar-toggler-icon" aria-hidden="true"></i>
+			<i class="fas fa-bars"></i>
 		</button>
 		
 		<a class="navbar-brand" href="#">Logo</a>
@@ -60,36 +59,34 @@
 	</div>
 
 	<div class="aboutSection">
-		
-		<div class="row">
+		<div class="sectionWrapper">
+			<div class="row">
 
-			<div class="col-md-7 col-sm-12">
+				<div class="col-lg-7 col-md-12 col-sm-12">
 
-				<h1>Few Words ABout Me</h1>
+					<h1>Few Words ABout Me</h1>
 
-				<div class="textContainer">
-					<p>Ut vitae vulputate sem. In mauris mi, dapibus sit amet bibendum nec, mattis at velit. </br>
-					Nam sit amet quam at nisi luctus fringilla. Phasellus molestie a sem in accumsan. Etiam sit amet luctus </br>
-					ligula, eget dignissim enim. Sed consequat velit in dolor dapibus finibus. Etiam at odio quis mi varius gravida et scelerisque tellus.</br>
-					Etiam rhoncus auctor eros, nec mollis turpis euismod eu. Nulla mattis magna quis dolor molestie, eu congue massa elementum.</br>
-					In gravida eros quis volutpat pharetra. Nulla facilisi. Morbi rhoncus auctor lorem sed molestie. Donec ullamcorper lobortis felis ut mollis.</br>
-					Duis at urna at risus gravida tristique vel non leo. Duis maximus leo non lorem vehicula, nec maximus mi mattis.</p>
+					<div class="textContainer">
+						<p>Ut vitae vulputate sem. In mauris mi, dapibus sit amet bibendum nec, mattis at velit. </br>
+						Nam sit amet quam at nisi luctus fringilla. Phasellus molestie a sem in accumsan. Etiam sit amet luctus </br>
+						ligula, eget dignissim enim. Sed consequat velit in dolor dapibus finibus. Etiam at odio quis mi varius gravida et scelerisque tellus.</br>
+						Etiam rhoncus auctor eros, nec mollis turpis euismod eu. Nulla mattis magna quis dolor molestie, eu congue massa elementum.</br>
+						In gravida eros quis volutpat pharetra. Nulla facilisi. Morbi rhoncus auctor lorem sed molestie. Donec ullamcorper lobortis felis ut mollis.</br>
+						Duis at urna at risus gravida tristique vel non leo. Duis maximus leo non lorem vehicula, nec maximus mi mattis.</p>
+					</div>
+
+					<div class="ResumeContainer">
+						<a href="">Grab my Resume</a>
+					</div>
+
 				</div>
 
-				<div class="ResumeContainer">
-					<a href="">Grab my Resume</a>
+				<div class="col-md-5 col-sm-12">
+
 				</div>
 
 			</div>
-
-			<div class="col-md-5 col-sm-12 PersoImgContaner">
-
-				<img src="media/img/shot.jpg" alt="">
-
-			</div>
-
 		</div>
-		
 	</div>
 
 	<div class="skillsSection">
@@ -327,10 +324,98 @@
 
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<div class="workSection">
+		
+		<h1>My Projects</h1>
+		
+		<div class="row">
+			<div class="col-md-6 col-sm-12 WorkDetails">
+				<h1>CRMEF Library</h1>
+				<p>
+					Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus.
+					Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Praesent sapien massa, 
+					convallis a pellentesque nec, egestas non nisi.
+				</p>
+				<div class="badgeWrapper">
+					<span class="badge">Bootstrap</span>
+					<span class="badge">Materialize Css</span>
+					<span class="badge">Laravel</span>
+					<span class="badge">Mysql</span>
+				</div>
+				<a href="https://www.crmef-mechouar-marrakech.ma/c/Librairie/" target="_blank">VISIT WEBSITE</a>
+			</div>
+			<div class="col-md-6 col-sm-12 mockUp">
+				<img src="media/img/work/crmef/crmefMockup.png" alt="">
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="contactSection">
+		<div>
+			<h1>Let's Work Together !</h1>
+			<form action="">
+				<div class="row">
+					<div class="col-6">
+						<input type="text" name="name" placeholder="NAME">
+					</div>
+					<div class="col-6">
+						<input type="email" name="email" placeholder="EMAIL">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<input type="text" name="subject" placeholder="SUBJECT">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<textarea name="message" cols="20" placeholder="MESSAGE" rows="2"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<button type="submit">SEND</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+	</div>
+
+	<div class="socialMedia">
+		
+		<div>
+			<a href="https://github.com/MarouaneZizah" target="_blank">
+				<i class="fasm fab fa-github"></i>
+			</a>
+
+			<a href="https://twitter.com/MarouaneZizah" target="_blank">
+				<i class="fasm fab fa-twitter"></i>
+			</a>
+
+			<a href="mailto:zizahmarouane@gmail.com" target="_blank">
+				<i class="fasm fas fa-envelope"></i>
+			</a>
+
+			<a href="https://www.linkedin.com/in/marouanezizah/" target="_blank">
+				<i class="fasm fab fa-linkedin-in"></i>
+			</a>
+
+			<a href="https://plus.google.com/u/0/+MarouaneZizah" target="_blank">
+				<i class="fasm fab fa-google-plus-g"></i>
+			</a>
+		</div>
+
+		<span>Marouane Zizah 2017  </span><i class="fasm far fa-copyright"></i>
+
+	</div>
+
+	<script defer src="js/fontawesome/js/fontawesome-all.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="slick/slick.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 </body>

@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+* {
+  outline: none; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background: #f8faf9; }
 
 nav {
   position: absolute !important;
@@ -93,43 +97,41 @@ nav {
       background: #2db564; }
 
 .aboutSection {
-  width: 80%;
-  padding: 32px 0;
-  margin: 0 auto; }
-  .aboutSection .row {
-    margin: 0;
-    padding: 0; }
-    .aboutSection .row h1 {
-      color: #16263c;
-      text-align: left; }
-    .aboutSection .row .textContainer {
-      margin: 0 auto; }
-      .aboutSection .row .textContainer p {
-        color: #4f5152;
-        letter-spacing: 1px;
-        padding: 16px 0;
-        text-align: left; }
-    .aboutSection .row .ResumeContainer {
-      text-align: center; }
-      .aboutSection .row .ResumeContainer a {
-        border-radius: 5px;
-        border: 1px solid #2db564;
-        text-align: center;
-        text-decoration: none;
-        color: #2db564;
-        font-size: 20px;
-        letter-spacing: 1px;
-        padding: 10px 20px; }
-      .aboutSection .row .ResumeContainer a:hover {
+  background: url(../media/img/aboutMe.jpeg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+  .aboutSection .sectionWrapper {
+    width: 80%;
+    padding: 32px 0;
+    margin: 0 auto; }
+    .aboutSection .sectionWrapper .row {
+      margin: 0;
+      padding: 0; }
+      .aboutSection .sectionWrapper .row h1 {
         color: #16263c;
-        background: #2db564; }
-    .aboutSection .row .PersoImgContaner {
-      margin-top: 32px; }
-      .aboutSection .row .PersoImgContaner img {
-        width: 60%;
-        margin: 0 auto;
-        display: block;
-        height: auto; }
+        text-align: left; }
+      .aboutSection .sectionWrapper .row .textContainer {
+        margin: 0 auto; }
+        .aboutSection .sectionWrapper .row .textContainer p {
+          color: #4f5152;
+          letter-spacing: 1px;
+          padding: 16px 0;
+          text-align: left; }
+      .aboutSection .sectionWrapper .row .ResumeContainer {
+        text-align: center; }
+        .aboutSection .sectionWrapper .row .ResumeContainer a {
+          border-radius: 5px;
+          border: 1px solid #2db564;
+          text-align: center;
+          text-decoration: none;
+          color: #2db564;
+          font-size: 20px;
+          letter-spacing: 1px;
+          padding: 10px 20px; }
+        .aboutSection .sectionWrapper .row .ResumeContainer a:hover {
+          color: #16263c;
+          background: #2db564; }
 
 .skillsSection {
   width: 80%;
@@ -142,7 +144,8 @@ nav {
   .skillsSection .slider {
     border: 1px solid #eaeaea;
     padding: 12px 0;
-    box-shadow: 0px 0px 20px 5px #f7f7f7; }
+    box-shadow: 0px 0px 20px 5px #f7f7f7;
+    background: #fff; }
     .skillsSection .slider .mainSlider .sliderItemContainer {
       position: relative;
       background: #f7f7f7;
@@ -305,14 +308,135 @@ nav {
       .skillsSection .slider .sliderDetails .sliderItemContainer .skillText {
         padding: 20px;
         text-align: center;
-        margin-top: 30px; }
+        margin-top: 30px;
+        color: #16263c; }
+        .skillsSection .slider .sliderDetails .sliderItemContainer .skillText hr {
+          width: 90%;
+          margin: 12px auto;
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(to right, transparent, #2a5084, transparent); }
+        .skillsSection .slider .sliderDetails .sliderItemContainer .skillText p {
+          padding-left: 35px;
+          text-align: left; }
       .skillsSection .slider .sliderDetails .sliderItemContainer img {
         width: 60px;
         height: auto;
         margin: 20px auto;
-        filter: grayscale(0.5); }
-        .skillsSection .slider .sliderDetails .sliderItemContainer img:hover {
-          filter: grayscale(0); }
+        filter: grayscale(0.2); }
+
+.workSection {
+  width: 80%;
+  padding: 32px 0;
+  margin: 0 auto; }
+  .workSection > h1 {
+    color: #16263c;
+    text-align: left;
+    margin-bottom: 32px; }
+  .workSection .WorkDetails {
+    justify-content: center;
+    display: flex;
+    flex-flow: column; }
+    .workSection .WorkDetails h1 {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 8px 0;
+      color: #16263c;
+      font-weight: 300; }
+    .workSection .WorkDetails > p {
+      letter-spacing: 1px;
+      margin: 8px 0;
+      color: #777777;
+      font-weight: 200;
+      line-height: 1.6; }
+    .workSection .WorkDetails .badgeWrapper {
+      margin: 0; }
+      .workSection .WorkDetails .badgeWrapper span {
+        margin: 8px 0;
+        color: #16263c;
+        border-radius: 4px;
+        padding: 6px 10px;
+        border: 1px solid #2db564; }
+    .workSection .WorkDetails a {
+      padding: 10px;
+      border: 1px solid #2db564;
+      color: #16263c;
+      width: 170px;
+      margin: 8px 0;
+      text-align: center;
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none !important; }
+      .workSection .WorkDetails a:hover {
+        background: #2db564; }
+  .workSection .mockUp img {
+    width: 100%;
+    height: auto; }
+
+.contactSection {
+  background: url(../media/img/contact.jpeg);
+  background-size: cover;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative; }
+  .contactSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(22, 38, 60, 0.7);
+    z-index: 1; }
+  .contactSection > div {
+    position: relative;
+    z-index: 1; }
+    .contactSection > div h1 {
+      color: #e6e6e6; }
+    .contactSection > div form {
+      width: 50%;
+      margin: 0 auto 40px; }
+      .contactSection > div form input, .contactSection > div form textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #e6e6e6;
+        padding: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+        color: #e6e6e6;
+        letter-spacing: 1px;
+        font-weight: 300;
+        word-spacing: 1px;
+        resize: none;
+        overflow: hidden; }
+      .contactSection > div form button {
+        padding: 5px 10px;
+        background: transparent;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        width: 200px;
+        color: #e6e6e6;
+        font-size: 20px;
+        cursor: pointer; }
+
+.socialMedia {
+  background: #2db564;
+  padding: 20px;
+  text-align: center;
+  color: #16263c; }
+  .socialMedia > div a {
+    color: #16263c;
+    text-decoration: none !important;
+    outline: none; }
+    .socialMedia > div a .fasm {
+      margin: 12px 6px;
+      font-size: 22px; }
+  .socialMedia > .fasm {
+    font-size: 12px;
+    vertical-align: baseline; }
 
 @media (min-aspect-ratio: 16 / 9) {
   .fullscreen-bg__video {
@@ -354,9 +478,46 @@ nav {
       position: relative;
       text-align: center;
       padding: 15px 10px;
-      background: #2db564; } }
+      background: #2db564; }
+
+  .WorkDetails {
+    order: 2;
+    text-align: center; }
+    .WorkDetails a {
+      margin: 10px auto !important; }
+
+  .contactSection > div form {
+    width: 60%; } }
 @media (max-width: 510px) {
   .homebuttonContainer a {
-    font-size: inherit !important; } }
+    font-size: inherit !important; }
+
+  .contactSection::before {
+    background: rgba(22, 38, 60, 0.8); }
+  .contactSection > div h1 {
+    font-size: 2rem; }
+  .contactSection > div form {
+    width: 85%; } }
+@media (max-width: 375px) {
+  .contactSection > div h1 {
+    font-size: 1.5rem; } }
+@media (max-width: 996px) {
+  .homeSection h1 {
+    font-size: 36px; } }
+@media (max-width: 909px) {
+  .homeSection h1 {
+    font-size: 33px; } }
+@media (max-width: 845px) {
+  .homeSection h1 {
+    font-size: 30px; } }
+@media (max-width: 780px) {
+  .homeSection h1 {
+    font-size: 25px; } }
+@media (max-width: 676px) {
+  .homeSection h1 {
+    font-size: 36px; } }
+@media (max-width: 386px) {
+  .workSection .WorkDetails h1 {
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */
