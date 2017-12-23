@@ -643,6 +643,17 @@ nav
 	}
 
 }
+
+.scrollNav
+{
+	position: fixed !important;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background: #16263c;
+    padding-right: 10%;
+    padding-left: 10%;
+}
 @media (min-aspect-ratio: 16/9) 
 {
 	.fullscreen-bg__video 

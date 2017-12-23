@@ -46,3 +46,23 @@ $(".mainSlider").slick({
         }
     ]
 });
+
+$(document).on('click', 'a[href^="#"]', function (event) 
+{
+    event.preventDefault();
+    $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - 80 }, 'slow');
+});
+
+$(window).scroll(function()
+{    
+    var a = 112;
+    var pos = $(window).scrollTop();
+    if(pos > a) 
+    {
+        $("nav").addClass('scrollNav');
+    }
+    else 
+    {
+        $("nav").removeClass('scrollNav');
+    }
+});
